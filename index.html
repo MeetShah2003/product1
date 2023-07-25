@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page</title>
+    <style>
+        @import url(style.css);
+    </style>
+</head>
+<body>
+    
+    <form id="form">
+        <table border="3" cellpadding="10" cellspacing="10">
+            <tbody>
+                <tr>
+                    <td><label for="">Image URL</label></td>
+                    <td><input type="url" id="img" placeholder="Enter Img URL"/></td>
+                </tr>
+                <tr>
+                    <td><label for="">Title</label></td>
+                    <td><input type="text" id="title" placeholder="Enter product name"/></td>
+                </tr>
+                <tr>
+                    <td><label for="">Price</label></td>
+                    <td><input type="number" id="price" placeholder="Enter price"/></td>
+                </tr>
+                <tr>
+                    <td><label for="">Category</label></td>
+                    <td><input type="text" id="category" placeholder="Enter category"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;"><input type="submit" id="submit" value="Post"/></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="value" placeholder="Search the value"/></td>
+                    <td style="text-align: center;"><button id="search">search</button></td>
+                </tr>
+            </tbody>
+        </table>
+      </form>
+      <hr />
+      <div id="btns">
+        <button id="lth">Low to high</button>
+        <button id="htl">High to low</button>
+      </div>
+        <div id="ui"></div>
+</body>
+<script src="./index.js"></script>
+</html>
